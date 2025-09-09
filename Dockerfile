@@ -1,5 +1,5 @@
-FROM ubuntu:alpine
+FROM alpine:latest
 
-RUN apt-get update && apt-get install -y curl
+RUN apk add --no-cache curl
 
 CMD ["curl", "google.com"]

@@ -12,7 +12,7 @@ node {
             )
         ]) {
             sh '''
-                DOCKER_BUILDKIT=1 docker build -t $DOCKERHUB_USERNAME/my-app:latest .
+                docker build -t $DOCKERHUB_USERNAME/my-app:latest .
             '''
         }
     }
